@@ -9,6 +9,7 @@ const Category = ({category}) => {
             <figure><img src={img}  alt="Shoes" className='img-sizing w-full'/></figure>
             <div className="card-body">
                 <h2 className="card-title">{categoryName}</h2>
+                
                 <p>{about}</p>
                 <div className="card-actions justify-end">
                     <Link to={`/categories/${_id}`}><button className="btn btn-primary">See All</button></Link>
