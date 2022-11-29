@@ -3,13 +3,14 @@ import img1 from '../../../Images/img-1.jpg';
 import img2 from '../../../Images/img-2.jpg';
 import img15 from '../../../Images/img-15.jpg';
 import img16 from '../../../Images/img-16.jpg';
+import  './Slider.css';
 
 
 const Slider = () => {
     return (
         <div className="carousel w-full max-w-5xl mx-auto">
             <div id="slide1" className="carousel-item relative w-full">
-                <img alt="" src={img1} className="w-full h-[450px] rounded-md" />
+               <img alt="" src={img1} className="w-full h-[450px] rounded-md"/>
                 <div className="absolute left-5 top-[50px] ml-6">
                     <h1 className='text-5xl  text-lime-800 font-semibold'>
                         Want to furnish your house<span className='text-orange'>?</span>
@@ -40,7 +41,7 @@ const Slider = () => {
                     <a href="#slide3" className="btn btn-circle">❯</a>
                 </div>
             </div>
-            <div id="slide3" className="carousel-item relative w-full">
+            {/* <div id="slide3" className="carousel-item relative w-full">
                 <img alt="" src={img15} className="w-full h-[450px] rounded-md slider-img" />
                 <div className="absolute left-5 top-[50px] ml-6">
                     <h1 className='text-5xl  text-lime-800 font-semibold'>
@@ -56,7 +57,7 @@ const Slider = () => {
                     <a href="#slide2" className="btn btn-circle">❮</a>
                     <a href="#slide4" className="btn btn-circle">❯</a>
                 </div>
-            </div>
+            </div> */}
             <div id="slide4" className="carousel-item relative w-full">
                 <img alt="" src={img16} className="w-full h-[450px] rounded-md" />
                 <div className="absolute left-5 top-[50px] ml-6">
