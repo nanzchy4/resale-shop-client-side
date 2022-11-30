@@ -4,9 +4,10 @@ import './Category.css';
 
 const Category = ({category}) => {
     const{img,about,categoryName,_id} = category;
+    //category card
     return (
-        <div className="card w-72 bg-base-100 shadow-xl">
-            <figure><img src={img}  alt="Shoes" className='img-sizing w-full'/></figure>
+        <div className="card w-72 bg-base-100 shadow-xl ">
+            <figure><img src={img}  alt="furniture" className='img-sizing w-full'/></figure>
             <div className="card-body">
                 <h2 className="card-title">{categoryName}</h2>
                 

@@ -1,4 +1,15 @@
-# Getting Started with Create React App
+## Features and Functionalities of the project:
+
+1. This website is a platform for selling and buying old products.
+
+2. User can create an account and see the sell post posted by sellers and also can post their products for sale.
+
+3. Users who are not authenicated can not see some certain page of the website and they have a restricted user experience.
+
+4.
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +78,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->

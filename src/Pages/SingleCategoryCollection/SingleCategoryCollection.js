@@ -5,11 +5,12 @@ import SingleCategory from './SingleCategory';
 
 const SingleCategoryCollection = () => {
     
+    //loading all products data
     const products = useLoaderData();
 
     return (
-        <div className='max-w-5xl mx-auto mt-6'>
-            
+        <div className='md:w-9/12 lg:max-w-5xl mx-auto mt-6'>
+            {/* getting a single product */}
             {
                 products.map(product => <SingleCategory key={product._id} product={product}></SingleCategory>)
             }

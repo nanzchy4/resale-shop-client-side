@@ -1,9 +1,10 @@
 import React from 'react';
 
 const SingleCategory = ({product}) => {
+    //product property destructure
     const {categoryName,img,location,usedTime,buyingPrice,sellingPrice,description,sellerName,postTime} =product;
     return (
-        <div className="card card-side bg-base-100 shadow-xl mb-8 w-9/12">
+        <div className="card card-side bg-base-100 shadow-xl mb-8 md:w-9/12">
             <figure className='ml-6'><img src={img} alt="Sofa" className='w-96 h-80 ' /></figure>
             <div className="card-body">
                 <h2 className="card-title">{categoryName}</h2>

@@ -77,8 +77,8 @@ const Navbar = () => {
                     
                     user && 
                     <>
-                    <ul><li className='font-bold text-2xl'>{user.displayName}</li></ul>
-                    <button onClick={handleLogOut} className="btn ml-8">Logout</button>
+                    <ul><li className='font-bold md:text-2xl'>{user.displayName}</li></ul>
+                    <button onClick={handleLogOut} className="btn ml-2 md:ml-8">Logout</button>
                     </>
                     
                 }
