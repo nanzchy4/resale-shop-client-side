@@ -3,7 +3,15 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
 
 const Navbar = () => {
-    const { user } = useContext(AuthContext);
+    const { user, logOut, loading } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => console.error(console.error))
+    }
+
+
     return (
         <div className="navbar bg-base-100 max-w-5xl mx-auto mt-4 mb-8">
             <div className="navbar-start">
@@ -14,21 +22,13 @@ const Navbar = () => {
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li><Link to='/'>Home</Link></li>
                         <li><Link>Shop</Link></li>
-                        {user?.displayName ?
-                            <>
-                                <li>{user.displayName}</li>
-                                <li><Link>Logout</Link></li>
-                            </>
-                            :
-                            <>
-                                <li><Link to='/signup'>SignUp</Link></li>
-                                <li><Link to='/login'>Login</Link></li>
+                        {user?.displayName &&
+                        <>
+                            <li><Link to='/signup'>SignUp</Link></li>
+                            <li><Link to='/login'>Login</Link></li>
 
-                            </>
-
-
-
-                        }
+                        </>
+                         }
                         <li tabIndex={0}>
                             <Link className="justify-between">
                                 Categories
@@ -49,7 +49,16 @@ const Navbar = () => {
                 <ul className="menu menu-horizontal p-0">
                     <li><Link to='/'>Home</Link></li>
                     <li><Link>Shop</Link></li>
-                    <li><Link to='/signup'>SignUp</Link></li>
+                    {user?.displayName?
+                        <>
+                        </> 
+                        :
+                        <>
+                            <li><Link to='/signup'>SignUp</Link></li>
+                            <li><Link to='/login'>Login</Link></li>
+
+                        </>
+                    }
                     <li tabIndex={0}>
                         <Link>
                             Categories
@@ -64,7 +73,15 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link className="btn">Get started</Link>
+                {
+                    
+                    user && 
+                    <>
+                    <ul><li className='font-bold text-2xl'>{user.displayName}</li></ul>
+                    <button onClick={handleLogOut} className="btn ml-8">Logout</button>
+                    </>
+                    
+                }
             </div>
         </div>
     );
