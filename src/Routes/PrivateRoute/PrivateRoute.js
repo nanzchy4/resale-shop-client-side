@@ -6,7 +6,7 @@ const PrivateRoute = ({children}) => {
     const {user, loading} = useContext(AuthContext);
     const location = useLocation();
     if(loading){
-        return <button className="btn btn-square loading"></button>
+        return <div className='max-w-5xl mx-auto text-center'><button className="btn btn-square loading text-center"></button></div>
     }
 
     //showing category/:id page if user is logged in

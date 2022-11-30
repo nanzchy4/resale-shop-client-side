@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SingleCategory = ({product}) => {
+const SingleCategory = ({product,setSelectedItem}) => {
     //product property destructure
     const {categoryName,img,location,usedTime,buyingPrice,sellingPrice,description,sellerName,postTime} =product;
     return (
@@ -16,7 +16,10 @@ const SingleCategory = ({product}) => {
                 <p>Posted by {sellerName}</p>
                 <p>"{description}"</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Book Now</button>
+                    <label htmlFor="booking-modal"
+                     className="btn btn-primary"
+                     onClick={() => setSelectedItem(product) }
+                     >Book Now</label>
                 </div>
             </div>
         </div>
