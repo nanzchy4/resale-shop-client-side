@@ -24,7 +24,7 @@ const Navbar = () => {
                     <li><Link to='/blog'>Blog</Link></li>
                     {user?.displayName?
                         <>
-                        <li><Link to='/signup'>DashBoard</Link></li>
+                        <li><Link to='/dashboard'>DashBoard</Link></li>
                         </> 
                         :
                         <>
@@ -43,7 +43,7 @@ const Navbar = () => {
                     <li><Link to='/blog'>Blog</Link></li>
                     {user?.displayName?
                         <>
-                        <li><Link to='/signup'>DashBoard</Link></li>
+                        <li><Link to='/dashboard'>DashBoard</Link></li>
                         </> 
                         :
                         <>

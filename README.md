@@ -2,12 +2,19 @@
 
 1. This website is a platform for selling and buying old products.
 
-2. User can create an account and see the sell post posted by sellers and also can post their products for sale.
+2. Different Categories of furniture are available with each catagory having multuple items
 
-3. Users who are not authenicated can not see some certain page of the website and they have a restricted user experience.
+3. User can create an account and see the sell post posted by sellers and also can post their products for sale.
 
-4.
+4. Users who are not authenicated can not see some certain page of the website and they have a restricted user experience.
 
+5. Users can confirm buy products by confirming their booking.
+
+Information for db user:
+DB_USER = admin-user
+DB_PASSWORD = CvghrhvZBcrrUiFK
+
+live site link: 
 
 <!-- # Getting Started with Create React App
 

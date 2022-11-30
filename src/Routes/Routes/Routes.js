@@ -7,6 +7,7 @@ import SingleCategoryCollection from "../../Pages/SingleCategoryCollection/Singl
 import error from '../../Images/error.jpg';
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Blog from "../../Pages/Blog/Blog";
+import DashBoard from "../../Pages/DashBoard/DashBoard";
 
 export const router = createBrowserRouter([
     {
@@ -33,6 +34,10 @@ export const router = createBrowserRouter([
             {
                 path: '/blog',
                 element: <Blog></Blog>
+            },
+            {
+                path: '/dashboard',
+                element: <DashBoard></DashBoard>
             }
         ]
        
