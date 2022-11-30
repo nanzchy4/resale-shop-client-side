@@ -7,7 +7,7 @@ const Categories = () => {
     //react query to load all category data
     const{data:categories = []} = useQuery({
         queryKey: ['categories'],
-        queryFn: () => fetch('http://localhost:5000/categories')
+        queryFn: () => fetch('https://resale-shop-server.vercel.app/categories')
         .then(res => res.json())
 
     })

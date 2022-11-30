@@ -21,7 +21,7 @@ export const router = createBrowserRouter([
             {
                 path: '/categories/:id',
                 element: <PrivateRoute><SingleCategoryCollection></SingleCategoryCollection></PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/categories/${params.id}`)
+                loader: ({params}) => fetch(`https://resale-shop-server.vercel.app/categories/${params.id}`)
             },
             {
                 path: '/signup',

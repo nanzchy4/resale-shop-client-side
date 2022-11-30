@@ -22,7 +22,7 @@ const BookingModal = ({ selectedItem, setSelectedItem }) => {
             name, email, itemName, price, phone, place
         }
 
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://resale-shop-server.vercel.app/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

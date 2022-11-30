@@ -14,7 +14,7 @@ Information for db user:
 DB_USER = admin-user
 DB_PASSWORD = CvghrhvZBcrrUiFK
 
-live site link: 
+live site link: https://resale-service.web.app/
 
 <!-- # Getting Started with Create React App
 
