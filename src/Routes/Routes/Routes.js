@@ -6,6 +6,7 @@ import SignUp from "../../Pages/SignUp/SignUp/SignUp";
 import SingleCategoryCollection from "../../Pages/SingleCategoryCollection/SingleCategoryCollection";
 import error from '../../Images/error.jpg';
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import Blog from "../../Pages/Blog/Blog";
 
 export const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
             {
                 path: '/login',
                 element: <Login></Login>
+            },
+            {
+                path: '/blog',
+                element: <Blog></Blog>
             }
         ]
        
